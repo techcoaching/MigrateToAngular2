@@ -1,4 +1,4 @@
-angular.module('angular1', []).config(
+angular.module('angular1', ["ngRoute"]).config(
     ['$routeProvider', function (routeProvider) {
         routeProvider.when('/', {
             templateUrl: 'src/users.html',
