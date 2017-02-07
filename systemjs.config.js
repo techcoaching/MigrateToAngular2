@@ -5,6 +5,7 @@
         map: {
             'rxjs': 'node_modules/rxjs',
             '@angular': 'node_modules/@angular',
+            'traceur': 'node_modules/traceur/dist/commonjs/traceur.js',
             'src': 'src'
         },
         packages: {
@@ -39,6 +40,7 @@
                 format: 'register',
                 defaultExtension: 'js'
             }
+            
         }
     });
 })(window);
