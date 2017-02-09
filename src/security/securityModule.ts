@@ -1,8 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import {FormsModule} from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { Groups } from "./groups";
-
+import { GroupService } from "./groupService";
+import { CategoryPreview } from "./categoryPreview";
 
 // export const MenuModule = window.angular.module('MenuModule', ['ngRoute']);
 // MenuModule.component('groups', Groups);
@@ -20,10 +22,12 @@ import { Groups } from "./groups";
 @NgModule({
     imports: [
         CommonModule,
-        //RouterModule.forChild(routes)
+        RouterModule,
+        FormsModule
     ],
-    declarations: [Groups],
+    declarations: [Groups, CategoryPreview],
     //exports: [RouterModule],
-    bootstrap: [Groups]
+    bootstrap: [Groups],
+    providers: [GroupService]
 })
 export class SecurityModule { }

@@ -1,9 +1,15 @@
+import { GroupService } from "./groupService";
 import { Component } from "@angular/core";
 @Component({
     templateUrl: "src/security/groups.html"
 })
 export class Groups {
-    constructor(){
-        console.log("Group component was created");
+    public groups: Array<any> = [];
+    public selectedCategory: any = null;
+    constructor(groupService: GroupService) {
+        this.groups = groupService.getAllGroups();
+    }
+    public onPreviewCategoryClicked(item: any) {
+        this.selectedCategory = item;
     }
 }
