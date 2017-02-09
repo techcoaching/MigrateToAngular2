@@ -33,6 +33,7 @@
     "@angular/http": "^2.4.6",
     "@angular/platform-browser": "^2.4.6",
     "@angular/platform-browser-dynamic": "^2.4.6",
+    "@angular/router": "^3.4.7",
     "@angular/upgrade": "^2.4.6",
     "angular": "1.5.5",
     "angular-route": "1.5.5",
