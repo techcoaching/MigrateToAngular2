@@ -4,9 +4,13 @@ function UsersCtrl($scope, $location) {
         { id: 2, firstName: "Tu 1", lastName: "Tran" }
     ];
     $scope.onEditUserClicked = onEditUserClicked;
+    $scopeonPreviewUserClicked = onPreviewUserClicked;
+
+    function onPreviewUserClicked(user){}
 
     function onEditUserClicked(user) {
         $location.path("/users/" + user.id);
     }
+    
 }
 UsersCtrl.$inject = ["$scope", "$location"];
