@@ -6,7 +6,7 @@ function UsersCtrl($scope, $location) {
     $scope.onEditUserClicked = onEditUserClicked;
 
     function onEditUserClicked(user) {
-        $location.path("/" + user.id);
+        $location.path("/users/" + user.id);
     }
 }
 UsersCtrl.$inject = ["$scope", "$location"];

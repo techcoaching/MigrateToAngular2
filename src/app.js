@@ -4,7 +4,7 @@ angular.module('angular1', ["ngRoute"]).config(
             templateUrl: 'src/users.html',
             controller: UsersCtrl
         });
-         routeProvider.when('/:userId', {
+         routeProvider.when('/users/:userId', {
              templateUrl: 'src/userDetail.html',
              controller: UserDetailCtrl
          });

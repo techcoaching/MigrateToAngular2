@@ -1,5 +1,6 @@
 // import {upgradeAdapter} from './upgradeAdapter';
 // upgradeAdapter.bootstrap(document.body, ['angular1']);
+/// <reference path="extensions.d.ts" />
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import {UpgradeModule} from "@angular/upgrade/static";
 import {AppModule} from "./appModule";

@@ -2,19 +2,17 @@ import { NgModule, Component } from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 import {HttpModule} from "@angular/http";
 import {UpgradeModule} from "@angular/upgrade/static";
-import { RouterModule, Routes } from "@angular/router";
+import { RouterOutlet, RouterModule} from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import {SecurityModule} from "./security/securityModule";
+import {DefaultComponent} from "./defaultComponent";
+import {AppRoute} from "./appRoute";
 
-@Component({
-    selector:"default",
-    template:"<div ng-view></div>"
-})
-export class DefaultComponent{}
 
 @NgModule({
-    imports: [BrowserModule, HttpModule, RouterModule, FormsModule, UpgradeModule],
+    imports: [BrowserModule, HttpModule, RouterModule, UpgradeModule, AppRoute, SecurityModule],
     declarations: [DefaultComponent],
     bootstrap:[DefaultComponent],
-    providers:[UpgradeModule]
+    providers:[UpgradeModule],
 })
 export class AppModule { }
