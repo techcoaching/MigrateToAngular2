@@ -1,10 +1,11 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
 import { Groups } from "./groups";
 import { GroupService } from "./groupService";
 import { CategoryPreview } from "./categoryPreview";
+import { UserPreview } from "./userPreview";
 
 // export const MenuModule = window.angular.module('MenuModule', ['ngRoute']);
 // MenuModule.component('groups', Groups);
@@ -25,7 +26,7 @@ import { CategoryPreview } from "./categoryPreview";
         RouterModule,
         FormsModule
     ],
-    declarations: [Groups, CategoryPreview],
+    declarations: [Groups, CategoryPreview, UserPreview],
     //exports: [RouterModule],
     bootstrap: [Groups],
     providers: [GroupService]
