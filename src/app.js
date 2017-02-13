@@ -1,12 +1,14 @@
 angular.module('angular1', []).config(
-    ['$routeProvider', function (routeProvider) {
-        routeProvider.when('/', {
+    ['$routeProvider', '$locationProvider', function (routeProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        routeProvider.when('/users', {
             templateUrl: 'src/users.html',
             controller: UsersCtrl
         });
-         routeProvider.when('/:userId', {
-             templateUrl: 'src/userDetail.html',
-             controller: UserDetailCtrl
-         });
+        routeProvider.when('/users/:userId', {
+            templateUrl: 'src/addOrUpdateUser.html',
+            controller: AddOrUpdateUserCtrl
+        });
+        routeProvider.otherwise({ redirectTo: "/users" })
     }]
 );
