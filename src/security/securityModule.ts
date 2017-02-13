@@ -6,28 +6,15 @@ import { Groups } from "./groups";
 import { GroupService } from "./groupService";
 import { CategoryPreview } from "./categoryPreview";
 import { UserPreview } from "./userPreview";
+import {HightlightBaseOnFirstName} from "./hightlightBaseOnFirstName";
 
-// export const MenuModule = window.angular.module('MenuModule', ['ngRoute']);
-// MenuModule.component('groups', Groups);
-// MenuModule.config(($routeProvider: any) => {
-//     $routeProvider.when('/groups', {
-//              templateUrl: 'src/security/groups.html',
-//              controller: Groups
-//          });
-// });
-//@NgModule({})
-//export class SecurityModule{}
-// let routes: Routes = [
-//     { path: "groups", component: Groups }
-// ];
 @NgModule({
     imports: [
         CommonModule,
         RouterModule,
         FormsModule
     ],
-    declarations: [Groups, CategoryPreview, UserPreview],
-    //exports: [RouterModule],
+    declarations: [Groups, CategoryPreview, UserPreview, HightlightBaseOnFirstName],
     bootstrap: [Groups],
     providers: [GroupService]
 })
