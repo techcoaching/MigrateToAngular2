@@ -9,6 +9,10 @@ angular.module('angular1', []).config(
             templateUrl: 'src/addOrUpdateUser.html',
             controller: AddOrUpdateUserCtrl
         });
+        routeProvider.when('/users/add', {
+            templateUrl: 'src/addOrUpdateUser.html',
+            controller: AddOrUpdateUserCtrl
+        });
         routeProvider.otherwise({ redirectTo: "/users" })
     }]
 );
