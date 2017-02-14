@@ -1,0 +1,56 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "basic about angular2",
+  "main": "systemjs.config.js",
+  "scripts": {
+    "postinstall": "npm run typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "typings": "typings"
+  },
+  "keywords": [
+    "angular2",
+    "getting",
+    "started",
+    "with",
+    "angular2"
+  ],
+  "author": {
+    "name": "TU Tran",
+    "email": "contact@tranthanhtu.vn",
+    "url": "tranthanhtu.vn"
+  },
+  "homepage": "tranthanhtu.vn",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.4.6",
+    "@angular/compiler": "^2.4.6",
+    "@angular/core": "^2.4.6",
+    "@angular/forms": "^2.4.6",
+    "@angular/http": "^2.4.6",
+    "@angular/platform-browser": "^2.4.6",
+    "@angular/platform-browser-dynamic": "^2.4.6",
+    "@angular/router": "^3.4.7",
+    "@angular/upgrade": "^2.4.6",
+    "angular": "1.5.5",
+    "angular-route": "1.5.5",
+    "core-js": "^2.4.1",
+    "es6-shim": "0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "^5.0.0-beta.6",
+    "systemjs": "^0.19.25",
+    "traceur": "0.0.111",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.35",
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "materialize-css": "^0.97.6",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.11"
+  }
+}
