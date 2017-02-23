@@ -6,7 +6,7 @@ import { Groups } from "./groups";
 import { GroupService } from "./groupService";
 import { CategoryPreview } from "./categoryPreview";
 import { UserPreview } from "./userPreview";
-import {HightlightBaseOnFirstName} from "./hightlightBaseOnFirstName";
+//import {HightlightBaseOnFirstName} from "./hightlightBaseOnFirstName";
 
 @NgModule({
     imports: [
@@ -14,7 +14,7 @@ import {HightlightBaseOnFirstName} from "./hightlightBaseOnFirstName";
         RouterModule,
         FormsModule
     ],
-    declarations: [Groups, CategoryPreview, UserPreview, HightlightBaseOnFirstName],
+    declarations: [Groups, CategoryPreview, UserPreview],
     bootstrap: [Groups],
     providers: [GroupService]
 })
