@@ -15,5 +15,7 @@ angular.module('angular1', []).config(
     }]
 );
 angular.element(document).ready(function() {
-     angular.bootstrap(document, ["angular1"]);
+     if(bootstrapAngular2Module){
+         bootstrapAngular2Module();
+     }
 });
