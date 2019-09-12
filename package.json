@@ -49,7 +49,7 @@
     "concurrently": "^2.0.0",
     "lite-server": "^2.2.0",
     "materialize-css": "^0.97.6",
-    "typescript": "^1.8.9",
+    "typescript": "^2.0.3",
     "typings": "^0.7.11"
   }
 }
